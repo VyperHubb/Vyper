@@ -1,0 +1,199 @@
+local player = game.Players.LocalPlayer
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "VyperHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "VyperHub"})
+
+--Tabs--
+
+local MainTab = Window:MakeTab({
+    Name = "Main",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local PlayerTab = Window:MakeTab({
+    Name = "Player",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Mm2Tab = Window:MakeTab({
+    Name = "Murder Mystery",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local BoogaBoogaTab = Window:MakeTab({
+	Name = "BoogaBooga",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--Buttons--
+
+Mm2Tab:AddButton({
+    Name = "DarkCheat",
+    Callback = function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/Gregory909/FolderGui-FolderHub/main/loader.lua", true))()
+      end    
+})
+
+Mm2Tab:AddButton({
+    Name = "AdminPanel",
+    Callback = function()
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
+      end    
+})
+
+BoogaBoogaTab:AddButton({
+	Name = "NilHub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Texchy/Nilhub/main/NilhubFree.lua"))()
+  	end    
+})
+
+BoogaBoogaTab:AddButton({
+	Name = "Newgen",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/newuser969/New-Gen-Scripts-V2/main/Booga%20Booga%20Reborn/Booga%20Booga%20Reborn.lua"))()
+  	end    
+})
+
+BoogaBoogaTab:AddButton({
+	Name = "Hosvile",
+	Callback = function()
+      		getgenv().key = "Hostile"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/The-telligence/main/MC%20KSystem%202"))()
+  	end    
+})
+
+--Text--
+
+MainTab:AddParagraph("Credits","Made by @geololl")
+
+MainTab:AddParagraph("Join our discord","https://discord.gg/W2ExAm5aTA")
+
+--Slider--
+
+PlayerTab:AddLabel("Movement")
+
+PlayerTab:AddSlider({
+    Name = "WalkSpeed",
+    Min = 16,
+    Max = 500,
+    Default = 5,
+    Color = Color3.fromRGB(255,255,255),
+    Increment = 1,
+    ValueName = "Speed",
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end    
+})
+
+PlayerTab:AddSlider({
+    Name = "JumpHeight",
+    Min = 50,
+    Max = 500,
+    Default = 5,
+    Color = Color3.fromRGB(255,255,255),
+    Increment = 1,
+    ValueName = "Height",
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+    end    
+})
+
+PlayerTab:AddButton({
+    Name = "Fly V3",
+    Callback = function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+      end    
+})
+
+PlayerTab:AddButton({
+	Name = "Walk on Walls",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/artas01/artas01/main/walkonwall_imnotscriptdeveloper"))()
+  	end    
+})
+
+PlayerTab:AddLabel("Misc Scripts")
+
+PlayerTab:AddButton({
+	Name = "Stretch Resolution",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/3e9kVK8K"))()
+  	end    
+})
+
+PlayerTab:AddButton({
+	Name = "Autoclicker",
+	Callback = function()
+      		getgenv().key = "Hostile"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/The-telligence/main/MC%20KSystem%202"))()
+  	end    
+})
+
+PlayerTab:AddButton({
+	Name = "Chatbypass",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastes.io/raw/lstrrfipqq'))();
+  	end    
+})
+
+PlayerTab:AddLabel("ESP Tools")
+
+PlayerTab:AddButton({
+	Name = "Lightux",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02six/UNIVERSALESPLTX/main/README.md'),true))()
+  	end    
+})
+
+PlayerTab:AddButton({
+	Name = "Universal ESP",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/uHa5kePq"))()
+  	end    
+})
+
+PlayerTab:AddLabel("Keyboard Tools")
+
+PlayerTab:AddButton({
+	Name = "Keyboard",
+	Callback = function()
+      		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Mobile-keyboard-6975"))()
+  	end    
+})
+
+PlayerTab:AddButton({
+	Name = "C Tool",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/ctool/main/ctool", true))()
+  	end    
+})
+
+PlayerTab:AddButton({
+	Name = "E Tool",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/TherealXORA/Roblox-Tools/main/E%20Tool%20(UPDATE)"))()
+  	end    
+})
+
+PlayerTab:AddButton({
+	Name = "Q Tool",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/qtoolv3/main/qtoolv3", true))()
+  	end    
+})
+
+PlayerTab:AddButton({
+	Name = "V Tool",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/TherealXORA/Roblox-Tools/main/V%20Tool%20(UPDATE)"))()
+  	end    
+})
+
+--End--
+
+OrionLib:Init()
